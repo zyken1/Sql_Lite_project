@@ -25,7 +25,7 @@ public class ListaPersonasRecycler extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_personas_recycler);
-
+        System.out.println("**********************  ListaPersonasRecycler ");
 
         conn=new ConexionSQLiteHelper(getApplicationContext(),"bd_usuarios",null,1);
 

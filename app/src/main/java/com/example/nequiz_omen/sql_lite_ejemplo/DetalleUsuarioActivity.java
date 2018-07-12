@@ -14,7 +14,7 @@ public class DetalleUsuarioActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_usuario);
-
+        System.out.println("**********************  DetalleUsuarioActivity ");
 
         campoId = (TextView) findViewById(R.id.campoId);
         campoNombre = (TextView) findViewById(R.id.campoNombre);

@@ -27,8 +27,10 @@ public class ConsultarListaListViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consultar_lista_list_view);
-        conn = new ConexionSQLiteHelper(getApplicationContext(), "bd_usuarios", null, 1);
         System.out.println("**********************  ConsultarListaListViewActivity ");
+
+
+        conn = new ConexionSQLiteHelper(getApplicationContext(), "bd_usuarios", null, 1);
         listViewPersonas = (ListView) findViewById(R.id.listViewPersonas);
 
         consultarListaPersonas();
@@ -77,8 +79,17 @@ public class ConsultarListaListViewActivity extends AppCompatActivity {
 
             listaUsuarios.add(usuario);
         }
+
+        llenarListaUsuarios();
         obtenerLista();
+
     }
+
+    private void llenarListaUsuarios() {
+        listaUsuarios.add(new Usuario(19,"Cristian","548526"));
+        listaUsuarios.add(new Usuario(14,"josesito","1212121212"));
+    }
+
 
     private void obtenerLista() {
         listaInformacion=new ArrayList<String>();
