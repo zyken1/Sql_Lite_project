@@ -28,7 +28,7 @@ public class ConsultarListaListViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consultar_lista_list_view);
         conn = new ConexionSQLiteHelper(getApplicationContext(), "bd_usuarios", null, 1);
-
+        System.out.println("**********************  ConsultarListaListViewActivity ");
         listViewPersonas = (ListView) findViewById(R.id.listViewPersonas);
 
         consultarListaPersonas();

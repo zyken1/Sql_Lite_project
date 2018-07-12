@@ -24,7 +24,7 @@ public class ConsultarUsuariosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consultar_usuarios);
-
+        System.out.println("**********************  ConsultarUsuariosActivity ");
         //VARIABLE  conn    y dentro de los corchetes  van los PARAMETROS de la base de datos
         conn = new ConexionSQLiteHelper(getApplicationContext(), "bd_usuarios",null,1);
 
